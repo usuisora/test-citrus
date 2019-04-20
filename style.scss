@@ -1,0 +1,233 @@
+$primary: #333;
+$secondary: #a5a5a5;
+$orange:#f6731c;
+$green: #7eb105;
+$active: #eefbe0;
+$dark: #111;
+$font : 'Roboto' ;
+$numfont:  'Ubuntu Mono', monospace;
+
+$sm: 11px;
+$md:12px;
+$subtitle:13px;
+$title:14px;
+$mx:20px;
+
+body{
+    font-family :'Roboto','Open Sans',sans-serif;
+    color:$primary;
+    font-size: $sm;
+    
+}
+
+
+.card{
+width: 247px;
+border: #eee solid 1px;
+flex-direction: column;
+border-radius: 3px;
+
+.image-container   {
+    width: 247px;
+    height:231px;
+    display : flex;
+   img{
+       margin:auto;
+   }
+   .color-buttons{
+     position: absolute;
+     top: 254px;
+     left:26px;
+     
+  }
+   button{
+    background-color: white;
+     border: white 1px solid;
+     border-radius: 4px;
+     width: 18px;
+     height: 18px;
+     margin: 2px;
+     
+ }
+  
+   .rose{
+       background-color: rgb(233, 161, 161);
+   }
+   .darkgrey{
+       background-color: $secondary;
+   }
+ }
+
+ .container{
+    padding: 15px
+}
+ .con1{
+     display: flex;
+     .marks{
+        color:$secondary;
+         flex:1;
+         font-weight: 700;
+         display: flex
+     }
+     .comments{
+         display: flex;
+         color:$green;
+         text-decoration: underline;
+         span{
+             margin-left: 3px
+         }
+     }
+ }
+
+ .code{
+     color:$secondary;
+     font-size: $sm;
+     padding-top: 10px;
+     .number{
+        
+        text-transform: uppercase;
+         color:black;
+         font-stretch: ultra-expanded;
+         font-family: $numfont
+     }
+ }
+
+ .instock{
+     color: $orange;
+     padding: 12 0;
+     .diod{
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background-color: $orange;
+         display: inline-block;
+     }
+ }
+
+ .title{
+     font-size: $title;
+     color: $dark;
+     padding-right:  18 
+ }
+
+ .option{
+            
+            list-style-type:none;
+            padding: 0;
+            margin: 10px 0;
+            font-size: $title;
+            color: $green;
+            display: flex;
+            li{
+                margin-right:  4px;
+                padding :0 px ;
+                border-bottom: $green 1px dashed;
+            }
+            .active{
+
+                padding :1 3    ;
+                margin-right: 6px;
+                border-bottom: none;
+                background-color: $active;
+                border-radius: 2px;
+                color: $dark;
+            }
+
+       
+        }
+        .price{
+            font-size: $sm;
+            color:$orange;
+            margin-top: 12px;
+            .old{
+                display: inline-block;
+                color:$secondary;
+                text-decoration:line-through;
+                font-size: $title;
+                font-family: "Roboto";
+                padding:0;
+            }
+            .new{
+
+                display: inline-block;
+                font-size: $mx;
+                font-weight: 900;
+                font-family: $numfont;
+                margin: 0 5 2 ;
+                font-stretch: condensed;
+                .sup{
+                    left:2px;
+                    font-size: $md;
+                    height: 0;
+                    line-height: 0;
+                    vertical-align: baseline;
+                    _vertical-align: bottom;
+                    position: relative;
+                    bottom: 6px;
+                }
+            
+            }
+            .diff{
+                color: $green;
+                font-size: $md+2;
+                font-family: $numfont;
+                margin-top: 4px;
+                margin-bottom: 5px
+               }
+        }
+
+        .actions{
+            border-top: #eee 1px solid;
+            display: flex;
+            input{
+                margin: 10px auto;
+                box-sizing: border-box;
+                justify-content: space-between
+            }
+        }
+
+        .focus{
+            .discount{
+                margin: 18px 0;
+                input{
+                    margin : 0;
+                    padding: 0;
+                }
+                display: flex;
+                .discount-wrap{
+                    margin: 0 5px;
+                    .discount-title{
+                        margin: 4px 0;
+                        font-weight: 600;
+                        color:$primary;
+                        font-size:$subtitle;
+                    }
+                    .discount-content{
+                        font-weight: 600;
+                        color:$orange;
+                        font-size:$md;
+                    }
+                }
+            }
+        }
+
+        .quickchars{
+            font-size:$subtitle;
+            .chars-head{
+                font-weight: 600;
+                color:$primary;
+            }
+        
+            
+            ul{
+                list-style-image: url(./public//images/bullet.png);
+                color:$secondary;
+                padding:0; 
+                font-weight: 300;
+                margin: 5 17;
+                
+            }
+        }
+ 
+ 
+}
