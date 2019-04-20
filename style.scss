@@ -1,38 +1,54 @@
-$primary: #333;
-$secondary: #a5a5a5;
-$orange:#f6731c;
-$green: #7eb105;
+$primary: #212121;
+$secondary: #999999;
+$orange: #F6731C;
+$green: #7EB105;
 $active: #eefbe0;
-$dark: #111;
-$font : 'Roboto' ;
-$numfont:  'Ubuntu Mono', monospace;
-
-$sm: 11px;
+$font : 'Arial' ;
+$numfont: 'Ubuntu', sans-serif;
+$sm: 10px;
 $md:12px;
-$subtitle:13px;
+$subtitle:14px;
 $title:14px;
 $mx:20px;
 
 body{
-    font-family :'Roboto','Open Sans',sans-serif;
+    font-family :$font,sans-serif;
     color:$primary;
     font-size: $sm;
     
 }
 
 
-.card{
+
+#card{
 width: 247px;
-border: #eee solid 1px;
+border: #EBEBEB solid 1px;
 flex-direction: column;
 border-radius: 3px;
 
+.image-icons{
+    height: 24px;
+    margin: 13px 16px 4px 16px;
+    
+ .youtube{
+    padding: 5 2;
+    width: 24px;
+    height: 24px;
+ }
+
+ .view{
+    padding: 3 2;
+    width: 24px;
+    height: 24px;
+ }
+
+
+}
+
 .image-container   {
-    width: 247px;
-    height:231px;
     display : flex;
    img{
-       margin:auto;
+       margin:4 auto;
    }
    .color-buttons{
      position: absolute;
@@ -46,16 +62,27 @@ border-radius: 3px;
      border-radius: 4px;
      width: 18px;
      height: 18px;
-     margin: 2px;
+     margin: 8px 2 0;
+     
      
  }
   
+ .active-color{
+    box-shadow: 1px 1px 2px #46c20c, -1px -1px 2px #46c20c,
+    -1px 1px 2px #46c20c, 1px -1px 2px #46c20c,;
+ }
    .rose{
-       background-color: rgb(233, 161, 161);
+       background-color: #FFACA7;
    }
+  
    .darkgrey{
-       background-color: $secondary;
+       background-color: #454545;
+
    }
+  
+  
+   
+ 
  }
 
  .container{
@@ -71,7 +98,7 @@ border-radius: 3px;
      }
      .comments{
          display: flex;
-         color:$green;
+         color: $green;
          text-decoration: underline;
          span{
              margin-left: 3px
@@ -95,18 +122,22 @@ border-radius: 3px;
  .instock{
      color: $orange;
      padding: 12 0;
+     display: flex;
+
      .diod{
+         margin-right: 8;
          width: 10px;
          height: 10px;
          border-radius: 50%;
          background-color: $orange;
          display: inline-block;
      }
+     
  }
 
  .title{
      font-size: $title;
-     color: $dark;
+     color: $primary;
      padding-right:  18 
  }
 
@@ -130,7 +161,7 @@ border-radius: 3px;
                 border-bottom: none;
                 background-color: $active;
                 border-radius: 2px;
-                color: $dark;
+                color: $primary;
             }
 
        
@@ -144,7 +175,6 @@ border-radius: 3px;
                 color:$secondary;
                 text-decoration:line-through;
                 font-size: $title;
-                font-family: "Roboto";
                 padding:0;
             }
             .new{
@@ -170,14 +200,14 @@ border-radius: 3px;
             .diff{
                 color: $green;
                 font-size: $md+2;
-                font-family: $numfont;
                 margin-top: 4px;
-                margin-bottom: 5px
+                margin-bottom: 5px;
+                font-family: $font;
                }
         }
 
         .actions{
-            border-top: #eee 1px solid;
+            border-top: #EBEBEB 1px solid;
             display: flex;
             input{
                 margin: 10px auto;
@@ -211,6 +241,8 @@ border-radius: 3px;
             }
         }
 
+        
+
         .quickchars{
             font-size:$subtitle;
             .chars-head{
@@ -220,14 +252,25 @@ border-radius: 3px;
         
             
             ul{
-                list-style-image: url(./public//images/bullet.png);
+                list-style-image: url(./public//svg/bullet.svg);
                 color:$secondary;
                 padding:0; 
                 font-weight: 300;
-                margin: 5 17;
+                margin: 5 14 17 ;
                 
             }
         }
  
  
+}
+
+
+#card:hover{
+    border: 1px solid #7EB105;
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+}
+
+.hidden{
+   display: none
 }

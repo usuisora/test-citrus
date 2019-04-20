@@ -4,19 +4,19 @@
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
     <title>Task</title>
 </head>
 <body>
-    <div class="card">
+    <div id="card" onmouseover="showFocus()" onmouseleave = "hideFocus()">
             <div class="image-icons">
-                    <input type="image" src="./public/images/youtube.png" />
-                    <input type="image" src="./public/images/view.png"/>
+                    <input class = 'youtube' type="image" src="./public/svg/youtube.svg" />
+                    <input class = 'view' type="image" src="./public/svg/view.svg"/>
                 </div>
         <div class="image-container">
-            <img  src="./public/images/device.jpg" alt="divice" >
+            <img  src="./public/svg/iphone.svg" alt="divice" >
             <div class="color-buttons">
-                    <button class = 'darkgrey'/>
+                    <button class = 'active-color darkgrey'/>
                     <button class = 'rose'/>
             </div>
         </div>
@@ -26,15 +26,15 @@
           <div class="con1">
                 <div class="marks">
                     <div class="stars">
-                    <input type="image" src="./public/images/star_on.jpg" />
-                    <input type="image" src="./public/images/star_on.jpg" />
-                    <input type="image" src="./public/images/star_on.jpg" />
-                    <input type="image" src="./public/images/star_off.jpg" />
-                    <input type="image" src="./public/images/star_off.jpg" />
+                    <input type="image" src="./public/svg/star_on.svg" />
+                    <input type="image" src="./public/svg/star_on.svg" />
+                    <input type="image" src="./public/svg/star_on.svg" />
+                    <input type="image" src="./public/svg/star_off.svg" />
+                    <input type="image" src="./public/svg/star_off.svg" />
                 </div>
                  5.0</div>
                 <div class="comments">
-                        <input type="image" src="./public/images/comment.gif" />
+                        <input type="image" src="./public/svg/comment.svg" />
                      <span>134 отзывов</span></div>
           </div>
 
@@ -72,16 +72,16 @@
 
 
         <div class="actions">
-             <input type="image" src="./public/images/compare.jpg" />
-             <input type="image" src="./public/images/heart.jpg" />
-             <input type="image" src="./public/images/buy.jpg" />
+             <input type="image" src="./public/svg/compare.svg" />
+             <input type="image" src="./public/svg/heart.svg" />
+             <input type="image" src="./public/svg/buy.svg" />
         </div>
 
 
-        <div  class="focus">
+        <div  id="focus" class='hidden'>
 
             <div class="discount">
-               <input type="image" src="./public/images/discount.jpg" />
+               <input type="image" src="./public/svg/discount.svg" />
                <div class="discount-wrap">
                     <div class="discount-title">АКЦИЯ</div>
                     <div class="discount-content">100 грн на первую покупку!</div>
@@ -96,7 +96,7 @@
                     <li>Li-polymer</li>
                     <li>7000 mAh</li>
                     <li>5 V</li>
-                    <li>Время автономоной работы в режиме ожидания 8 часов.</li>
+                    <li>Время автономоной работы в режиме ожидания 12 ч</li>
                 </ul>
             </div>
         </div>
